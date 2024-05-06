@@ -13,12 +13,12 @@ function exibirAcimaDe10($produtos){
 
     foreach ($produtos as $produto){
         if($produto["preco"] > 10){
-            $produtoAcimaDe10[] = $produto;
+            $produtosAcimaDe10[] = $produto;
         }
     }
 
     return $produtosAcimaDe10;
 }
 
-$produtoAcimaDe10 = exibirAcimaDe10($produtos);
+$produtosAcimaDe10 = exibirAcimaDe10($produtos);
 

@@ -1,6 +1,6 @@
 <?php
 
-include_once("backend.php");
+include_once("backendd.php");
 ?>
 
 <div style="background-color: yellowgreen; padding-bottom: 15px" >
@@ -11,7 +11,7 @@ include_once("backend.php");
     <ul>
         <?php
         foreach ($produtosAcimaDe10 as $produto) {
-            echo "<li>$produto</li>";
+            echo "<li>$produto[nome] . R$ . $produto[preco]</li>";
         }
         ?>
     </ul>
